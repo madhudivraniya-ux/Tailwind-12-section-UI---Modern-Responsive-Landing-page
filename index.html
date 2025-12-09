@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--css-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#afa6e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        }
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+    <!--0 index-->
+    <div class="bg-slate-900 text-white text-5m">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 text-center">
+            Summer sale : Get 30% off pro plans-ends sunday.
+        </div>
+    </div>
+
+    <!--1 part Navbar-->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#" class="flex items-center gap-2 font-extrabold text-xl">
+                    <span
+                        class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">T</span>
+                    Tailwind 12-UI
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#" class="hover:text-brand-600">Features</a>
+                    <a href="#" class="hover:text-brand-600">Stats</a>
+                    <a href="#" class="hover:text-brand-600">Services</a>
+                    <a href="#" class="hover:text-brand-600">Gallery</a>
+                    <a href="#" class="hover:text-brand-600">Pricing</a>
+                    <a href="#" class="hover:text-brand-600">Contact</a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-3">
+                    <a class="px-3 py-3 rounded-lg border border-slate-200 hover:border-brand-600" href="#">Sign in</a>
+                    <a class="px-4 py-2 rounded-lg bg-brand-600 text-black hover:bg-brand-700" href="#cta">Get
+                        started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--2 part Hero Section-->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <img src="images/img1.avif" class="w-full h-full object-cover" alt="hero" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-white/90"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
+            <div class="max-w-3xl text-white">
+
+                <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs">
+                    New v3.0 released
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+                    design faster with a beautiful, responsive tailwind UI kit.
+                </h1>
+
+                <p class="mt-5 text-lg text-white/90">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, accusantium?
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#pricing"
+                        class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold shadow-soft">
+                        Buy Template
+                    </a>
+
+                    <a href="#Features"
+                        class="px-5 py-3 rounded-xl bg-white/80 text-slate-900 hover:bg-white font-semibold">
+                        See Features
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--3 part Feature Cards-->
+    <section id="features" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-3xl text-center mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold">packed with practical features</h2>
+                <p class="text-slate-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <!-- 3 Columns Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">1</div>
+                    <h3 class="font-semibold text-lg">Headless $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">2</div>
+                    <h3 class="font-semibold text-lg">responsive $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">3</div>
+                    <h3 class="font-semibold text-lg">Modern $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">4</div>
+                    <h3 class="font-semibold text-lg">Componentsize $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">5</div>
+                    <h3 class="font-semibold text-lg">Utility $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-shadow">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center mb-4">6</div>
+                    <h3 class="font-semibold text-lg">Dark mode $ Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+                        optio?</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--4 part-->
+    <section id="stats" class="py-12 bg-slate-50 border-y border-slate-200/70">
+        <div class="container mx-auto px-4 sm:px-6 lh:py-8">
+            <div class="grid gap-8 mx:grid-cols-4 text-center">
+                <div>
+                    <div class="text-3xl font-extrabold">12k+</div>
+                    <p class="text-slate-600">Happy Users</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">98%</div>
+                    <p class="text-slate-600">Satisfaction</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">250+</div>
+                    <p class="text-slate-600">Components</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">4.9</div>
+                    <p class="text-slate-600">Avarage Rating</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--5 part-->
+    <section id="services" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-soft">
+                    <img src="https://plus.unsplash.com/premium_photo-1661596686441-611034b8077e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29tfGVufDB8fDB8fHww"
+                        \ class="w-full h-80 object-cover" />
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-3">Design,Build,Ship</h2>
+                    <p class="text-slate-600 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt deserunt eum laborum dolore.</p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">A</div>
+                            <div>
+                                <h3 class="font-semibold">Product Strarergy</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Dicta, amet.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">B</div>
+                            <div>
+                                <h3 class="font-semibold">UI/UX Design</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Dicta, amet.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">C</div>
+                            <div>
+                                <h3 class="font-semibold">Engineering</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Dicta, amet.
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <a href="#cta" class="inline-block mt-6 px-4 py-2 rounded-lg border border-slate-300">Learn
+                            More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--6 part-->
+    <section id="gallery" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between mb-8">
+                <div>
+                    <h2 class="text-3xl">Showcase</h2>
+                    <p class="text-slate-600">A quick peek at what you can build.</p>
+                </div>
+                <a href="#" class="text-brand-700 hover:underline">View all</a>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <img src="https://media.istockphoto.com/id/935380450/photo/letter-web-design-written-behind-torn-paper.webp?a=1&b=1&s=612x612&w=0&k=20&c=xNe4poWd9ZPm_wDSicrnD1s9RGlaLUy_Bt9Cd3FoMPc="
+                    alt="gallery" class="rounded-2xl h-52 w-full object-cover">
+
+                <img src="https://plus.unsplash.com/premium_photo-1683578888262-22a112723a83?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VvfGVufDB8fDB8fHww"
+                    alt="gallery" class="rounded-2xl h-52 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt="gallery" class="rounded-2xl h-52 w-full object-cover">
+
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D"
+                    alt="gallery" class="rounded-2xl h-52 w-full object-cover">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--7 part-->
+    <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-1 bg-gradient-to-br from-brand-600 to-brand-800 text-white rounded-3xl p-8">
+                    <h2 class="text-3xl font-bold mb-3">Loved by makers</h2>
+                    <p class="text-white/90">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, velit.</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <img class="h-10 w-10 rounded-full"
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+                            alt="">
+                        <div>
+                            <div class="font-semibold">Avery patel</div>
+                            <div class="text-sm text-white/80">Product lead,pixelware</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                            nesciunt.</p>
+                        <div class="mt-4 text-sm text-slate-500">samir-k</div>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                            nesciunt.</p>
+                        <div class="mt-4 text-sm text-slate-500">dev-v</div>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                            nesciunt.</p>
+                        <div class="mt-4 text-sm text-slate-500">paresh-p</div>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                            nesciunt.</p>
+                        <div class="mt-4 text-sm text-slate-500">nill</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--8 part-->
+
+    <section id="Pricing" class="py-16 sm:py-20 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Simple,transprate pricings</h2>
+                <p class="text-slate-600">choose a plane Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <!--plan-->
+                <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+                    <div class="text-sm font-semibold text-brand-700">Stater</div>
+                    <div class="mt-3 text-4xl font-extrabold">$0</div>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet.</p>
+                    <ul class="mt-4 space-y-4 text-sm text-slate-700">
+                        <li>. 10 componets</li>
+                        <li>. community</li>
+                        <li>.MIT Licenses</li>
+
+                    </ul>
+                    <a
+                        class="mt-6 inline-block w-full text-center rounded-lg border border-slate-300 py-2 hover:border-border-600">
+                        Get started </a>
+
+                </div>
+
+                <div class="rounded-2xl border-2 border-brand-600 p-6 bg-white relative">
+                    <span
+                        class="absolute -top-3 right-6 rounded-full bg-brand-600 text-white text-xs px-3">Popular</span>
+                    <div class="text-sm font-semibold text-brand-700">pro</div>
+                    <div class="mt-3 text-4xl font-extrabold">$49</div>
+                    <p class="text-slate-600 mt-2">Lorem, ipsum dolor.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li>. 10 componets</li>
+                        <li>. community</li>
+                        <li>.MIT Licenses</li>
+
+                    </ul>
+                    <a
+                        class="mt-6 inline-block w-full text-center rounded-lg text-center bg:brand-600 py-2 hover:border-border-600">
+                        Buy pro</a>
+
+                </div>
+
+                <div class="rounded-2xl border-2 border-slate-200 p-6 bg-white">
+
+                    <div class="text-sm font-semibold text-brand-700">Terms</div>
+                    <div class="mt-3 text-4xl font-extrabold">$129</div>
+                    <p class="text-slate-600 mt-2">Lorem, ipsum dolor.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li>. 10 componets</li>
+                        <li>. community</li>
+                        <li>.MIT Licenses</li>
+
+                    </ul>
+                    <a
+                        class="mt-6 inline-block w-full text-center rounded-lg text-center bg:brand-600 py-2 hover:border-border-600">
+                        Contact sales</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--9 part-->
+    <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Meet the team</h2>
+                <p class="text-slate-500">small but nighty.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold">priya sharma</div>
+                    <div class="text-sm text-slate-500">Design Lead</div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold">riya sharma</div>
+                    <div class="text-sm text-slate-500">ui/ux Lead</div>
+
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fHww"
+                        alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold">john</div>
+                    <div class="text-sm text-slate-500">Design Lead</div>
+
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww"
+                        alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold">neha sharma</div>
+                    <div class="text-sm text-slate-500">web development Lead</div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--10 part-->
+    <section id="cta" class="py-20 bg-gradient-to-br from-brand-600 to-brand-800 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg-px-8">
+            <div class="grid lg:grid-cols-3 items-center gap-8">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-extrabold leading-tight">Ready to build something grate?</h2>
+                    <p class="mt-3 text-white/90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+                        incidunt libero porro aliquam natus in?</p>
+                </div>
+                <div class="flex gap-3 lg:justify-end">
+                    <a class="px-5 py-3 rounded-xl bg-white text-slate-900 font-semibold">start free</a>
+                    <a class="px-5 py-3 rounded-xl bg-black/20 border border-white/30 text-slate-900 font-semibold">
+                        See pricing </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-semibold">Send us a message</h3>
+                    <form class="mt-4 grid gap-4">
+                        <input class="w-full rounded-ig border border-slate-300 px-4 py-2" placeholder="Full Name" />
+                        <input class="w-full rounded-ig border border-slate-300 px-4 py-2" placeholder="Full Email" />
+                        <textarea class="w-full rounded-ig border border-slate-300 px-4 py-2"
+                            placeholder="Tell us about your project...">
+                        </textarea>
+                        <button class="rounded-lg bg-brand-600 text-white px-4 py-2" type="submit"></button> </button>
+                    </form>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-semibold">Visit our studio</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+                        eius!</p>
+                    <div class="mt-6 grid gap-4">
+                        <div class="flex gap-3 items-start">
+                            <span
+                                class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100 bg-black">
+                                <img src="images/img2.png" alt=""></span>
+                            <div class="font-medium">+91 9988883456</div>
+                            <div class="text sm- text-slate-600">Mon-Fri,9am-6pm IST</div>
+                        </div>
+
+                        <div class="flex gap-3 items-strat">
+                            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100">
+                                <img src="images/img3.png" alt=""></span>
+                            <div class="font-medium">Hello@example.com</div>
+                            <div class="text sm- text-slate-600">Lorem ipsum dolor sit amet.</div>
+                        </div>
+
+                        <div class="flex gap-3 items-strat">
+                            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100">
+                                <img src="images/img4.png" alt=""></span>
+                            <div class="font-medium">Support</div>
+                            <div class="text sm- text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--footer-->
+     <footer class="bg-slate-900 text-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid gap-8 md:grid-cols-4 text-center">
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Support</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Product</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="text-center text-slate-400 mt-12 text-sm">© 2025 Tailwind 12-UI. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
